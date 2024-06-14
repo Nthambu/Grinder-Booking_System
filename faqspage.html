@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ-page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 class="text py-3" style="color: #fff">Frequently Asked Questions</h3>
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <div class="qn my-2">
+            <h5 class="bg-light my-0 p-2">
+              What areas do you offer your services?
+              <button
+                class="border-0 bg-transparent px-3"
+                onclick="toggleContent(this)"
+              >
+                <i
+                  class="fa-solid fa-plus fa-fade d-inline"
+                  style="color: #000"
+                ></i>
+              </button>
+            </h5>
+            <hr class="m-0" />
+            <p class="bg-light p-2 d-none">
+              Currently, we are providing our services to these towns and their
+              areas: Kiserian, Ngong, and Matasia, and their environs.
+            </p>
+          </div>
+
+          <div class="qn my-2">
+            <h5 class="bg-light my-0 p-2">
+              What are the terms of payments?
+              <button
+                class="border-0 bg-transparent px-3"
+                onclick="toggleContent(this)"
+              >
+                <i
+                  class="fa-solid fa-plus fa-fade d-inline"
+                  style="color: #000"
+                ></i>
+              </button>
+            </h5>
+            <hr class="m-0" />
+            <p class="bg-light p-2 d-none">
+              We normally ask for payments after we successfully provide the
+              service to you. We do not work on credit!
+            </p>
+          </div>
+          <!-- Another question as an example -->
+
+          <!-- Another question as an example -->
+          <div class="qn my-2">
+            <h5 class="bg-light my-0 p-2">
+              What are the methods of payments?
+              <button
+                class="border-0 bg-transparent px-3"
+                onclick="toggleContent(this)"
+              >
+                <i
+                  class="fa-solid fa-plus fa-fade d-inline"
+                  style="color: #000"
+                ></i>
+              </button>
+            </h5>
+            <hr class="m-0" />
+            <p class="bg-light p-2 d-none">
+              Currently,we are acccepting payments via cash,send money and lipa
+              na mpesa
+            </p>
+          </div>
+          <div class="qn my-2">
+            <h5 class="bg-light my-0 p-2">
+              Which are your working hours?
+              <button
+                class="border-0 bg-transparent px-3"
+                onclick="toggleContent(this)"
+              >
+                <i
+                  class="fa-solid fa-plus fa-fade d-inline"
+                  style="color: #000"
+                ></i>
+              </button>
+            </h5>
+            <hr class="m-0" />
+            <p class="bg-light p-2 d-none">
+              Our working days are from Monday to sunday and from 6am to 7pm
+            </p>
+          </div>
+
+          <div class="qn my-2">
+            <h5 class="bg-light my-0 p-2">
+              Where are you located?
+              <button
+                class="border-0 bg-transparent px-3"
+                onclick="toggleContent(this)"
+              >
+                <i
+                  class="fa-solid fa-plus fa-fade d-inline"
+                  style="color: #000"
+                ></i>
+              </button>
+            </h5>
+            <hr class="m-0" />
+            <p class="bg-light p-2 d-none">
+              We are located at Kiserian town along Dam road,Eureka streets
+              opposite Eureka Lounge
+            </p>
+          </div>
+          <!-- More questions can be added similarly -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleContent(button) {
+        // Find the paragraph element that comes right after the button's parent element
+        const paragraph =
+          button.parentNode.nextElementSibling.nextElementSibling;
+
+        // Toggle the 'd-none' class to show or hide the paragraph
+        paragraph.classList.toggle("d-none");
+      }
+    </script>
+  </body>
+</html>

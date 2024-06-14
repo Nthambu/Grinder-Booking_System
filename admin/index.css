@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+:root {
+  --white: #fff;
+  --blue: #2a2185;
+}
+body {
+  min-height: 100vh;
+  background: grey;
+ 
+  /* position: relative; */
+}
+.container{
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.formdata {
+  
+  
+  /* margin-left: 300px; */
+  line-height: 1.7;
+  background-color: var(--blue);
+  width: 500px;
+  height: 370px;
+  line-height: 1.7;
+  margin-top: 50px;
+ 
+  
+}
+
+.formdata h3 {
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  background-color: red;
+}
+
+form {
+  font-weight: 600;
+  padding: 10px 20px;
+  line-height: 2.3;
+
+  width: 100px;
+}
+form label {
+  color: var(--white);
+  font-size: 18px;
+
+  
+  
+}
+form label:nth-child(1){
+  width:300px;
+  position: absolute;
+  
+}
+form input {
+  position:absolute;
+  border-radius: 8px;
+  line-height: 2.5;
+
+  width: 400px;
+  /* padding: 10px; */
+  border: none;
+}
+
+input[type="submit"] {
+  line-height: 1.8;
+  position: relative;
+  left:50%;
+  right:50%;
+  background-color: yellow;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}
+
+@media screen and (max-width:576px){
+  .formdata{
+    width:95vw;
+    font-size: 15px;
+    
+  }
+  form input{
+    font-weight: 400;
+    width:80vw;
+  }
+  input[type="submit"]{
+    width:90px;
+    left:0;
+    
+    
+    position: absolute;
+  }
+}

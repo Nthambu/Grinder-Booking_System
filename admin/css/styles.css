@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+:root {
+  --white: #fff;
+  --blue: #2a2185;
+}
+body {
+  min-height: 100vh;
+  background: grey;
+  
+}
+.formdata {
+
+  left: 300px;
+  line-height: 1.7;
+  background-color: var(--blue);
+  width: 500px;
+  height: 500px;
+  
+  margin-top: 200px;
+  position: relative;
+}
+
+.formdata h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  background-color: red;
+}
+
+form {
+  font-weight: 600;
+  padding: 10px 20px;
+  /* position: absolute; */
+
+  width: 100px;
+}
+form label {
+  color: var(--white);
+  font-size: 23px;
+}
+form input {
+  border-radius: 8px;
+
+  width: 400px;
+  padding: 15px;
+  border: none;
+}
+input[type="submit"] {
+  line-height: 1.8;
+  /* display: none; */
+
+  background-color: yellow;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}
+@media screen and (max-width: 727px) {
+  .formdata {
+    left: 0;
+    width: 500px;
+    position: relative;
+  }
+
+}
+@media screen and (max-width:520px){
+  .formdata{
+    width:100%;
+    left:50px;
+    right:50px;
+    position: relative;
+  }
+}

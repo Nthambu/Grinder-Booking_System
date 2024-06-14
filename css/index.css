@@ -1,0 +1,368 @@
+body {
+  display: grid;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main_container {
+  display: grid;
+}
+.navbar a:hover {
+  color: red;
+}
+
+.navbar-brand,
+.nav-link,
+.nav-link.active {
+  color: black !important;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.image-wrapper {
+  max-width: 100%;
+  height: 18em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.carousel-control-prev {
+  color: red;
+}
+.carousel-control-next {
+  color: red;
+}
+
+@media screen and (min-width: 576px) {
+  /* display:flex*/
+  /*Let all the flexible items be the same length, regardless of its content */
+  .carousel-inner {
+    display: flex;
+    padding: 1em;
+  }
+
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 3);
+    /*the card content will occupy full width the same as carouse image when margin-right is set to 0 */
+  }
+  .image-wrapper {
+    height: 23vw;
+  }
+  /* ===========CARDS========= */
+  .cards{
+    display: flex;
+    /* position: relative; */
+   gap:20px;
+   margin-bottom: 20px;
+  }
+  @media (max-width:576px) {
+    .cards{
+     /* position: relative; */
+      display: grid;
+      grid-template-columns: 1;
+    }
+    
+  }
+  @media (max-width:1115px){
+    .cards{
+      /* position: absolute; */
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  .testimony {
+    margin: 1px;
+    margin-left: 4px;
+    margin-top: 5px;
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+
+    padding-right: 1px;
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+  .testimonials {
+    background-color: #71c9ce;
+    font-size: 18px;
+    width: 100%;
+    margin: 1px;
+    height: 20vw;
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+.card {
+  margin: 0 0.5em;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 6vh;
+  height: 6vh;
+  background-color: #71c9ce;
+  border-radius: 50%;
+  top: 50%;
+  opacity: 0.5;
+  transform: translateY(-50%);
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  opacity: 1;
+}
+.mytext {
+  color: red;
+  font-weight: 700;
+}
+@media screen and (max-width: 1090px) {
+  .testimonials {
+    height: 30vw;
+  }
+}
+@media screen and (max-width: 971px) {
+  .testimonials {
+    height: 34vw;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 686px) {
+  .testimony {
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5px;
+    gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials {
+    width: 80%;
+    background-color: #71c9ce;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5vh;
+    height: 5vh;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .text {
+    margin-right: 20px;
+    padding-left: -30px;
+    margin-left: -20px;
+    margin-right: 30px;
+    font-size: 14px;
+  }
+  .testimony {
+    display: grid;
+    padding: 10px;
+    margin: 5px;
+    gap: 8px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonials {
+    width: 90%;
+    height: 45vw;
+    background-color: #71c9ce;
+    padding: 4px;
+  }
+}
+@media screen and (max-width: 331px) {
+  .testimonials {
+    height: 90vw;
+    width: 100%;
+  }
+}
+.menubar {
+  background: #71c9ce;
+
+  height: 10vh;
+  align-items: center;
+
+  gap: 3px;
+  display: flex;
+}
+.menubar a {
+  color: black;
+  padding-left: 100px;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menubar a:hover {
+  color: blue;
+}
+
+.text {
+  text-align: center;
+  margin: 20px;
+  color: black;
+  font-size: 22px;
+}
+.header {
+  padding: 10px;
+  font-size: 28px;
+  color: blue;
+  font-weight: 800;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.image-container {
+  display: none;
+  width: 100%; /* Adjust based on your requirement */
+  overflow: visible; /* Change to 'visible' if you want images to overflow the div */
+  position: relative; /* Needed to position images absolutely within this container */
+}
+.image-container {
+  /* display: flex; */
+  flex-direction: row;
+  padding: 6px 15px;
+  gap: 10px;
+  border-left: 10px;
+  border-right: 10px;
+  background-color: #cbf1f5;
+}
+.image-container:hover {
+  transform: scale(1.1);
+}
+.animate-image {
+  border-radius: 15px;
+  width: 100%;
+
+  animation: slideIn 15s infinite linear; /* Adjust the duration (10s) as needed */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  to {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+.book_div {
+  margin: 40px;
+
+  place-items: center;
+  font-weight: 900;
+  margin-right: 600px;
+  margin-left: 550px;
+  place-items: center;
+  display: grid;
+  font-size: 24px;
+  background-color: #71c9ce;
+  padding: 10px;
+}
+.book_div a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+}
+.book_div a:hover {
+  color: black;
+  background-color: blue;
+  width: unset;
+}
+.testi_div {
+  align-items: center;
+  place-items: center;
+  text-align: center;
+  color: blue;
+}
+
+.testimonials h5 {
+  line-height: 1.9;
+}
+.testimonials:hover {
+  /* transform: scale(1.1); */
+  color: blue;
+  box-shadow: 4px 3px 4px rgba(0.9, 0, 0.2, 0.3);
+}
+.col-md-3 {
+  background-color: #71c9ce;
+}
+
+.feedback {
+  margin-top: 3px;
+  display: grid;
+  margin-left: 340px;
+  margin-bottom: 3px;
+  place-items: center;
+  color: auto;
+  text-align: center;
+  max-width: 450px;
+  border-radius: 10px;
+}
+.feedback_header {
+  padding: 15px;
+  padding-top: 20px;
+}
+.feedback_para {
+  padding: 12px;
+}
+.form_inputs {
+  background-color: #71c9ce;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  width: 500px;
+  position: relative;
+  margin-top: 5px;
+}
+.form_inputs input {
+  padding: 8px;
+  width: 100%;
+  line-height: 1.6;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+}
+form {
+  max-width: 700px;
+  margin-top: 10px;
+  padding-top: 30px;
+}
+input[type="submit"] {
+  display: block;
+  margin: auto;
+  width: 40%;
+  background-color: rgb(42, 22, 160);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+input[type="submit"]:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+#experience {
+  width: 100%;
+}
+.my-inner {
+  height: 1200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
